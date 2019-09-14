@@ -17,14 +17,49 @@
       </nav>
     </header>
     <main class="container">
-        <!--Тут часть, которую верстать пока не нужно-->
-     <h1>Отели Седоны</h1>
-        <div class="hotels">
-            <section class="hotel">
-             <h2>Amara Resort & SPA</h2>
+      <h1>Отели Седоны</h1>
+       <div class="filter">
+        <section class="infrostructure">
+         <h2>Инфраструктура</h2>
+          <form action="#" method="get">
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" name="pool" id="pool" checked>
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="wi-fi">Wi-fi</label>
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+          </form>
+        </section>
+        <section class="accomodation_type">
+          <h2>Тип жилья</h2>
+            <form action="#" method="get">
+              <label for="hotel">Гостиница</label>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="motel">Мотель</label>
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="apartment">Апартаменты</label>
+              <input type="checkbox" name="apartment" id="apartment" checked>
+            </form>
+          </section>
+          <section>
+            <h2>Стоимость в сутки</h2>
+             <form action="#" method="get">
+              <label for="price">Стоимость в сутки (Р):</label>
+              <p>От 0 До 3000</p>
+              <input type="range" min="0" max="3000" name="price" id="price">
+             </form>
+          </section>
+          <button type="submit">Показать</button>
+      </div>
+      <div>
+        <!--Сортировка-->
+      </div>
+      <div class="hotels">
+           <section class="hotel">
+             <h3>Amara Resort & SPA</h3>
               <div>
                 <img src="photo1.com" alt="Фотография гостиницы Amara Resort & SPA">
-                <p class="type">Гостиница</h2>
+                <p class="type">Гостиница</p>
                 <p class="price">От 4000 Р.</p>
                 <button type="button">Подробнее</button>
                 <button type="button">Забронировать</button>
@@ -32,9 +67,9 @@
               <div>
                 <p class="rate">Рейтинг: 8,5</p>
               </div>
-            </section>
-            <section class="hotel">
-             <h2>Desert Quail Inn</h2>
+           </section>
+           <section class="hotel">
+             <h3>Desert Quail Inn</h3>
               <div>
                 <p class="type">Мотель</p>
                 <p class="price">От 3000 Р.</p>
@@ -45,9 +80,9 @@
               <div>
                 <p class="rate">Рейтинг: 8,9</p>
               </div>
-            </section>
-            <section class="hotel">
-             <h2>Villas At Poco Diablo</h2>
+           </section>
+           <section class="hotel">
+             <h3>Villas At Poco Diablo</h3>
               <div>
                 <p class="type">Апартаменты</p>
                 <p class="price">От 2000 Р.</p>
@@ -58,7 +93,7 @@
               <div>
                 <p class="rate">Рейтинг: 9,2</p>
               </div>
-            </section>
+           </section>
         </div>
     </main>
     <footer>

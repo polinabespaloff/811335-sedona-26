@@ -67,7 +67,21 @@
           <p class="big">Заинтересовались?</p>
           <p class="small">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
        </section>
+       <div class="map">
+         <img src="map.com" alt="Карта Седоны">
+       </div>
        <button type="button">Поиск гостиницы в Седоне</button>
+       <form action="#" method="get">
+          <label for="check_in_date">Дата заезда:</label>
+          <input type="date" name="check_in_date" id="check_in_date">
+          <label for="check_out_date">Дата выезда:</label>
+          <input type="date" name="check_out_date" id="check_out_date">
+          <label for="adults">Взрослые:</label>
+          <input type="number" name="adults" id="adults">
+          <label for="children">Дети:</label>
+          <input type="number" name="children" id="children">
+        </form>
+        <button type="submit">Найти</button>
     </main>
     <footer>
        <div>#visitsedona</div>
